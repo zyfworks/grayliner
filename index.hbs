@@ -13,12 +13,12 @@
                 <span class="post-tags"><i class="fa fa-tag" aria-hidden="true"></i>{{tags}}</span>
 				<span class="post-Comments"><i class="fa fa-comment" aria-hidden="true"></i><a href="{{url}}#disqus_thread">Comments</a></span>
             </span>
-			
+
             <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
         </header>
         <section class="post-excerpt">
-			{{#if image}}<a rel="nofollow" href="{{url}}"><img class="post-image" src="{{image}}" alt="{{{title}}}" /></a>{{/if}}
-            {{excerpt words="20"}} ... 
+			{{#if feature_image}}<a rel="nofollow" href="{{url}}"><img class="post-image" src="{{img_url feature_image}}" alt="{{{title}}}" /></a>{{/if}}
+            {{excerpt words="20"}} ...
 			<div class="more-box clear-fix"><a class="read-more" rel="nofollow" href="{{url}}">Read more &raquo;</a></div>
         </section>
     </article>

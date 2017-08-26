@@ -12,14 +12,14 @@
 {{#author}}
 
     <section class="author-profile inner">
-        {{#if image}}
+        {{#if profile_image}}
         <figure class="author-image">
-            <div class="img" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></div>
+            <div class="img" style="background-image: url({{img_url profile_image}})"><span class="hidden">{{name}}'s Picture</span></div>
         </figure>
         {{/if}}
-		
+
 		<a class="subscribe-button" href="{{url}}rss/"><i class="fa fa-rss"></i> {{name}}</a>
-		
+
         <h1 class="author-title">{{name}}</h1>
         <h2 class="author-bio">{{bio}}</h2>
         <div class="author-meta">

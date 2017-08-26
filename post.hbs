@@ -1,7 +1,7 @@
 {{!< default}}
 
 {{> header}}
-    
+
 <main class="content" role="main">
 
     <article class="{{post_class}}">
@@ -23,9 +23,9 @@
             <footer class="post-footer">
                 {{#author}}
 
-					{{#if image}}
+					{{#if feature_image}}
 					<figure class="author-image">
-						<A class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
+						<A class="img" href="{{url}}" style="background-image: url({{img_url feature_image}})"><span class="hidden">{{name}}'s Picture</span></a>
 					</figure>
 					{{/if}}
 
@@ -67,23 +67,23 @@
                        <i class="fa fa-google-plus"></i>
                        <span class="hidden">Google+</span>
                     </a>
-                    
+
                 </section>
 
             </footer>
 
         {{/post}}
-		
-		
+
+
 		{{! Inserts a devider - just for beauty ;) }}
         <div><hr /></div>
- 
+
         {{! This is inserts disqus, post.id is the identifier }}
         <div id="disqus_thread"></div>
         <script type="text/javascript">
             var disqus_shortname = 'SwordAir'; // required: replace example with your forum shortname
             var disqus_identifier = '{{post.id}}';
- 
+
             /* * * DON'T EDIT BELOW THIS LINE * * */
             (function() {
                 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
